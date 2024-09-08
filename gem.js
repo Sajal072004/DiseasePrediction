@@ -34,7 +34,7 @@ app.post("/upload", upload.single("image"), async (req, res) => {
         },
       },
       {
-        text: "Identify any plant or animal diseases in this image and suggest possible solutions.Give the python dictionary object and nothing else , that python dictionary will have two key value pairs named - Disease:value , Cure:value. Dont return anything except the python dictionary object. and if there is no crop or animal cant be found return Disease:No plants/animal found. Cure:No plant/animal found. Make sure to always return python dictionary with only these two keys.Return in python dictionary format.Give the cure in minimum of 100 words if it exist"
+        text: "Identify any plant or animal diseases in this image and suggest possible solutions.Give the json object object and nothing else , that json object will have two key value pairs named - Disease:value , Cure:value. Dont return anything except the json object object. and if there is no crop or animal cant be found return Disease:No plants/animal found. Cure:No plant found. Make sure to always return json object with only these two keys.Return in json object format.Give the cure in minimum of 100 words if it exist"
       },
     ]);
     
